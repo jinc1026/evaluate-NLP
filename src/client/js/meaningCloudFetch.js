@@ -1,7 +1,7 @@
 async function APIFetch() {
 	const formdata = new FormData();
 	const apikey = await getAPIKey();
-	console.log("API Key is", apikey);
+
 	formdata.append("key", apikey);
 	formdata.append("txt", document.getElementById("input").value);
 	formdata.append("lang", "en");  // 2-letter code, like en es fr ...
@@ -29,3 +29,5 @@ async function getAPIKey(){
 }
 
 export { APIFetch }
+
+module.export = getAPIKey;

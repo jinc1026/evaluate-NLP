@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	 <head>
+		  <meta charset="utf-8">
+		  <title>Test</title>
+	 </head>
+
+	 <body>
+
+		  <header>
+				<h1 class="title">
+					 Sentiment Analysis by MeaningCloud API
+				</h1>
+			  	<p>
+					The text provided is analyzed to determine if it expresses a positive, negative, or neutral sentiment; to do this, the local polarity of the different sentences in the text is identified and the relationship between them evaluated, resulting in a global polarity value for the whole text.
+			  </p>
+		  </header>
+
+		  <main>
+				<section>
+					 <form>
+						 <textarea id="input" type="text" name="input" rows="10" value="" placeholder="Type text, paraphra or URL"></textarea>
+						  <input id="submit" type="submit" name="submit" value="Analyze">
+					 </form>
+				</section>
+
+				<section id="results">
+					 <p>MeaningCloud API's analysis result is the following:</p>
+						<ul>
+							<li>Agreement: <span id="agreement"></span></li>
+							<li>Irony: <span id="irony"></span></li>
+							<li>Confidence: <span id="confidence"></span></li>
+							<li>Subjectivity: <span id="subjectivity"></span></li>
+						</ul>
+				</section>
+		  </main>
+
+		  <footer>
+				<p>Created by Jin Choe - Udacity - Dec 2021</p>
+		  </footer>
+
+	 </body>
+</html>

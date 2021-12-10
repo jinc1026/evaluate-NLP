@@ -3,7 +3,7 @@ async function APIFetch() {
 	const apikey = await getAPIKey();
 
 	formdata.append("key", apikey);
-	formdata.append("txt", document.getElementById("input").value);
+	formdata.append("url", document.getElementById("input").value);
 	formdata.append("lang", "en");  // 2-letter code, like en es fr ...
 
 	const requestOptions = {
